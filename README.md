@@ -1,5 +1,5 @@
 # Terraform Tutorial
-Terraform Tutorial for DevOps course
+This is a Terraform Tutorial for DevOps course DD2482 at KTH.
 
 ## Installation 
 
@@ -34,12 +34,12 @@ And move on to navigating to it:
 Now it's time to create a file named **main.tf**. In this file you will add the configuration you want to use for Docker and Terraform. This is an example file which will work on Mac OS X and Linux. 
 
     terraform {
-    required_providers {
-        docker = {
-            source  = "kreuzwerker/docker"
-            version = "~> 2.13.0"
+        required_providers {
+            docker = {
+                source  = "kreuzwerker/docker"
+                version = "~> 2.13.0"
+            }
         }
-    }
     }
 
     provider "docker" {}
@@ -84,6 +84,8 @@ If you found the presentation interesting and want to develop this further you c
 
 
 ## Build Infrastructure 
+
+
 
 ## Change Infrastructure 
 
