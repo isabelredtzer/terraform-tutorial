@@ -83,10 +83,34 @@ To stop the container you can just run:
 If you found the presentation interesting and want to develop this further you can keep working by creating real infrastructure in the cloud you choose. 
 
 
-## Build Infrastructure 
+## Build & Change Infrastructure 
 
+The following command will update all configurations for readability and consistency:
 
+    terraform fmt
 
-## Change Infrastructure 
+If you want to make sure that your configuration is correct and up to date, all you have to do is run the following command:
+
+    terraform validate
+
+To see what changes will be made by the edits in the file, you can use the following command:
+
+    terraform plan
+
+The terraform plan command is similar to git diff and will show you the changes made in your files and what will need to happen in order to create the end result. 
+
+To apply changes, use the following command:
+
+    terraform apply
+
+You will have to type in yes and press ENTER to be able to actually apply the changes. 
+
+If you want to see the current state you can use the following command:
+
+    terraform show
+
 
 ## Destroy Infrastructure 
+If you have finished with the project, you can destroy what you have created with the command:
+
+    terraform destroy
